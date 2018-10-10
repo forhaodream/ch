@@ -2,6 +2,7 @@ package ch.chtool.base;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.transition.Visibility;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,4 +93,16 @@ public class ViewHolder {
     public int getPosition() {
         return position;
     }
+
+    // 绑定View
+    public ViewHolder findView(int viewId, int visibility) {
+        View view = getView(viewId);
+        if (visibility == 0) {
+            view.setVisibility(View.VISIBLE);
+        } else {
+            view.setVisibility(View.GONE);
+        }
+        return this;
+    }
+
 }
