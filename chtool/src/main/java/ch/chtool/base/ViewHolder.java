@@ -99,7 +99,7 @@ public class ViewHolder {
         View view = getView(viewId);
         if (visibility == 0) {
             view.setVisibility(View.VISIBLE);
-        } else {
+        } else if (visibility == 1) {
             view.setVisibility(View.GONE);
         }
         return this;
