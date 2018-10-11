@@ -1,6 +1,5 @@
 package ch.chtool.base;
 
-import android.support.v4.app.Fragment;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -14,7 +13,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 
 import java.io.Serializable;
 
@@ -39,34 +37,44 @@ public abstract class BaseFragment extends Fragment {
 
     protected AlertDialog alertDialog;
 
+    protected BaseActivity mActivity;
+
+    protected abstract int setView();
+
+    protected abstract void init(View view);
+
+    protected abstract void initData(Bundle savedInstanceState);
+
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mActivity = (BaseActivity) activity;
+    }
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        oThis = getActivity();
-        context = getContext();
     }
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(initLayout(), container, false);
-        return view;//绑定fragment注解
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(setView(), container, false);
     }
 
-    public abstract int initLayout();
+    @Override
+    public void onViewCreated(View view, Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        init(view);
+    }
 
     @Override
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+    public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        InitializeComponent();
-        InitializeData();
-        InitializeEvent();
+        initData(savedInstanceState);
     }
 
-    protected abstract void InitializeComponent();
 
-    protected abstract void InitializeData();
-
-    protected abstract void InitializeEvent();
 
     /**
      * 显示LoadingDialog
