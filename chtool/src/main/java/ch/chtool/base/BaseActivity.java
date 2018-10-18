@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -38,6 +39,9 @@ public abstract class BaseActivity extends Activity {
     private static Log log;
 
     private TitleLayout titleLayout = null;
+    private AutoRelativeLayout toolbar;
+    private TextView toolbar_title;
+    private ImageView toolbar_back;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -136,6 +140,19 @@ public abstract class BaseActivity extends Activity {
             intent.putExtras(bundle);
         }
         startActivity(intent);
+    }
+
+    private void bindTitle() {
+        toolbar = findViewById(R.id.layout_title_rlc);
+        toolbar_back = toolbar.findViewById(R.id.layout_title_back);
+        toolbar_title = toolbar.findViewById(R.id.layout_title_text);
+        toolbar_back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+        toolbar_title.setText("标题");
     }
 
 
