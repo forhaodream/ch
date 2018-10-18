@@ -38,7 +38,6 @@ public abstract class BaseActivity extends Activity {
     // log
     private static Log log;
 
-    private TitleLayout titleLayout = null;
     private AutoRelativeLayout toolbar;
     private TextView toolbar_title;
     private ImageView toolbar_back;
