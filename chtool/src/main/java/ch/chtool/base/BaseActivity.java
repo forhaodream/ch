@@ -25,6 +25,7 @@ import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.R;
 import ch.chtool.net.OkHttpClientManager;
+import ch.chtool.utils.SpUtils;
 
 /**
  * Created by CH
@@ -51,7 +52,6 @@ public abstract class BaseActivity extends Activity {
         initView();
         //设置数据
         initData();
-
 
     }
 
