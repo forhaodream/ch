@@ -37,10 +37,9 @@ public abstract class BaseFragment extends Fragment {
 
     protected AlertDialog alertDialog;
 
-
     protected abstract int setView();
 
-    protected abstract void init(View view);
+    protected abstract void initView(View view);
 
     protected abstract void initData(Bundle savedInstanceState);
 
@@ -58,7 +57,7 @@ public abstract class BaseFragment extends Fragment {
     @Override
     public void onViewCreated(View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        init(view);
+        initView(view);
     }
 
     @Override
@@ -66,7 +65,6 @@ public abstract class BaseFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         initData(savedInstanceState);
     }
-
 
 
     /**
