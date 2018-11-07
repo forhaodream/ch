@@ -2,30 +2,23 @@ package ch.chtool.base;
 
 
 import android.app.Activity;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.squareup.okhttp.Request;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.R;
-import ch.chtool.net.OkHttpClientManager;
-import ch.chtool.utils.SpUtils;
 
 /**
  * Created by CH
@@ -52,7 +45,6 @@ public abstract class BaseActivity extends Activity {
         initView();
         //设置数据
         initData();
-
     }
 
     protected <T extends View> T F(int id) {
