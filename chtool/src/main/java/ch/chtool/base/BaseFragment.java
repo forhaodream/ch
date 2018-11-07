@@ -37,19 +37,12 @@ public abstract class BaseFragment extends Fragment {
 
     protected AlertDialog alertDialog;
 
-    protected BaseActivity mActivity;
 
     protected abstract int setView();
 
     protected abstract void init(View view);
 
     protected abstract void initData(Bundle savedInstanceState);
-
-    @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        mActivity = (BaseActivity) activity;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
