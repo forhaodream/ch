@@ -16,6 +16,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.google.gson.Gson;
 import com.zhy.autolayout.AutoRelativeLayout;
 
 import ch.chtool.R;
@@ -35,10 +36,12 @@ public abstract class BaseActivity extends Activity {
     private AutoRelativeLayout toolbar;
     private TextView toolbar_title;
     private ImageView toolbar_back;
+    private Gson gson;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        gson = new Gson();
         //设置布局
         setContentView(initLayout());
         //初始化控件

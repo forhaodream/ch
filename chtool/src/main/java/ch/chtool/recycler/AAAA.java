@@ -6,7 +6,10 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.widget.TextView;
 
+import com.squareup.okhttp.Request;
+
 import ch.chtool.R;
+import ch.chtool.net.OkHttpClientManager;
 import ch.chtool.view.PopupWindowView;
 
 /**
@@ -29,5 +32,19 @@ public class AAAA extends Activity {
         TextView textView;
         textView = findViewById(R.id.id_tag_autolayout_margin);
         popupWindowView.showAsDropDown(textView, Gravity.BOTTOM, 0, 0);
+    }
+
+    private void aaa() {
+        OkHttpClientManager.postAsyn("", new OkHttpClientManager.ResultCallback<String>() {
+            @Override
+            public void onError(Request request, Exception e) {
+
+            }
+
+            @Override
+            public void onResponse(String response) {
+
+            }
+        });
     }
 }

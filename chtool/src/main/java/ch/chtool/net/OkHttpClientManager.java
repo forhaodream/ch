@@ -1,5 +1,6 @@
 package ch.chtool.net;
 
+import com.google.gson.stream.JsonReader;
 import com.squareup.okhttp.OkHttpClient;
 
 import android.graphics.Bitmap;
