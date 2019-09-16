@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/ch.iml" filepath="$PROJECT_DIR$/ch.iml" />
       <module fileurl="file://$PROJECT_DIR$/chtool/chtool.iml" filepath="$PROJECT_DIR$/chtool/chtool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/chtool-app.iml" filepath="$PROJECT_DIR$/app/chtool-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chtool/chtool-chtool.iml" filepath="$PROJECT_DIR$/chtool/chtool-chtool.iml" />
       <module fileurl="file://$PROJECT_DIR$/chtools/chtools.iml" filepath="$PROJECT_DIR$/chtools/chtools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/workplacebych-chtool.iml" filepath="$PROJECT_DIR$/workplacebych-chtool.iml" />
     </modules>
   </component>
 </project>

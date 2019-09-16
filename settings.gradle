@@ -1,1 +1,1 @@
-include ':app', ':chtools', ':chtool'
+include ':app', ':chtool'
