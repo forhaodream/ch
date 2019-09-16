@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sub_title_color">#CCCCCC</color>
+    <color name="danger_color">#00FF7E</color>
+    <color name="zg_color">#FFE558</color>
+    <color name="theme_color">#1D96F7</color>
+
+
+    <color name="text_color_white">#FFFFFF</color>
+    <color name="text_bg_gray">#99000000</color>
+
+    <color name="bg_black">#000000</color>
+    <color name="line_orange">#FF8A34</color>
+    <color name="view_color_f8">#F8F8F8</color>
+
+    <color name="title_bg_color">#1D96F7</color>
+
+    <color name="bg_jiange_color">#EFEFF4</color>
+
+    <color name="line_color">#CFCFCF</color>
+
+    <color name="line_color_gray">#EEEEEE</color>
+
+    <color name="text_black_color">#464646</color>
+
+    <color name="text_deep_black_color">#111111</color>
+
+    <color name="text_deep2_black_color">#222222</color>
+
+    <color name="text_light_black_color">#333333</color>
+
+    <color name="listview_text_black_color">#343434</color>
+
+    <color name="text_gray_color">#696969</color>
+
+    <color name="text_hint_color">#A1A1A1</color>
+
+    <color name="text_light_gray_color">#808992</color>
+
+    <color name="text_deep_gray_color">#999999</color>
+
+    <color name="text_orange_color">#FE8329</color>
+
+    <color name="text_green_color">#26D786</color>
+    <color name="text_light_green_color">#03D225</color>
+
+    <color name="bg_gray">#F8F8F8</color>
+
+    <color name="text_red_color">#FE2929</color>
+
+    <color name="text_deep_red_color">#F71D1D</color>
+
+    <color name="text_blue_color">#0E90F7</color>
+
+    <color name="text_light_blue_color">#2193F5</color>
+    <color name="home_text_grey">#868E97</color>
+
+    <color name="text_light_yellow_color">#FFE115</color>
+    <color name="line_green">#67C23A</color>
+    <color name="text_light_orange_color">#F68016</color>
+
+    <color name="dialog_spin_item_text_pressed">#F08300</color>
+
+    <color name="colorDeliveryText">#5b5b5b</color>
+    <color name="common_dialog_title_text_color">#333333</color>
+    <color name="common_dialog_title_bg">#f6f6f6</color>
+    <color name="common_dividing_line_color">#f5f5f5</color>
+    <color name="slide_menu_exit_text">#F08300</color>
+    <color name="color_f6">#f6f6f6</color>
+    <color name="color_b7b8bd">#b7b8bd</color>
+    <color name="text_orange">#FF7C1B</color>
+    <color name="learn_text_green">#21C98C</color>
+
+</resources>
