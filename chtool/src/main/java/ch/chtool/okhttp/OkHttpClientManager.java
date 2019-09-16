@@ -1,10 +1,7 @@
-package ch.chtool.net;
+package ch.chtool.okhttp;
 
-import com.google.gson.stream.JsonReader;
 import com.squareup.okhttp.OkHttpClient;
 
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.Handler;
 import android.os.Looper;
 import android.widget.ImageView;
@@ -17,7 +14,6 @@ import com.squareup.okhttp.FormEncodingBuilder;
 import com.squareup.okhttp.Headers;
 import com.squareup.okhttp.MediaType;
 import com.squareup.okhttp.MultipartBuilder;
-import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;

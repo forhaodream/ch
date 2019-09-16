@@ -9,7 +9,7 @@ import android.widget.TextView;
 import com.squareup.okhttp.Request;
 
 import ch.chtool.R;
-import ch.chtool.net.OkHttpClientManager;
+import ch.chtool.okhttp.OkHttpClientManager;
 import ch.chtool.view.PopupWindowView;
 
 /**
