@@ -19,4 +19,18 @@
         <attr name="civ_fill_color" format="color" />
     </declare-styleable>
 
+    <declare-styleable name="HandWriteView">
+        <attr name="paintColor" format="color" />
+        <attr name="paintMaxWidth" format="dimension" />
+        <attr name="paintMinWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TimeLineMarker">
+        <attr name="markerSize" format="dimension"/>
+        <attr name="marker" format="color|reference"/>
+        <attr name="beginLine" format="color|reference"/>
+        <attr name="endLine" format="color|reference"/>
+        <attr name="lineSize" format="dimension"/>
+    </declare-styleable>
 </resources>
