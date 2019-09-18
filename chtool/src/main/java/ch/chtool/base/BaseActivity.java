@@ -116,10 +116,6 @@ public abstract class BaseActivity extends Activity {
         Glide.with(getApplicationContext()).load(url).into(view);
     }
 
-    public void loadErrorPic(String url, ImageView view, int errorImg) {
-        Glide.with(getApplicationContext()).load(url).error(errorImg).into(view);
-    }
-
 
     // 界面跳转
     public void startActivity(Class<?> clz) {
